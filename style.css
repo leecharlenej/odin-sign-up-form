@@ -12,6 +12,8 @@ body{
     display:flex;
 }
 
+/* left side */
+
 .left {
     border: 1px solid black;
     width: 40%;
@@ -45,34 +47,83 @@ body{
     height: 90%; 
 }
 
+/* right-side */
+
 .right {
-    border: 1px solid black;
     width: 60%;
 }
 
 .right > .banner {
-    padding-top: 100px 100px 50px 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
     padding-right: 100px;
     padding-left: 50px;;
 
 }
 
-.right > .form-body > h2,
-.right > .form-body > form {
-    padding-left: 50px;
-}
-
-.form-top {
-    box-shadow: 0px 10px lightgrey;
-    margin-bottom: 50px;
-}
-
-.form-body ul {
+ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
 }
+
+.entire-form,
+form {
+    border: 2px solid red;
+}
+
+form {
+    background-color: white;
+}
+
+.form-top {
+    font-size: small;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.entire-form > h2,
+.entire-form > form {
+    padding-left: 50px;
+}
+
+.form-top {
+    border: 1px solid black;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.form-top li {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+}
+
+input:focus {
+    outline: none;;
+    border: 1px solid blue !important;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.3);
+
+}
+
+input[id="password"]:invalid,
+input[id="confirm-password"]:invalid {
+    border-color: red;
+  }
+  
+input[id="password"]:valid
+input[id="confirm-password"]:valid  {
+    border-color: green;
+  }
+
+.form-bottom {
+    border: 1px solid black;
+}
+
 
 button {
     background-color: #596D48;
@@ -80,4 +131,9 @@ button {
     padding: 8px 25px;
     border-radius: 5px;
     font-weight: bold;
+    margin-bottom: 30px;
+}
+
+strong {
+    color: #596D48;
 }

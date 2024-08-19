@@ -22,43 +22,61 @@
 
         <div class="right">
             <div class="banner">
-                <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
                     <br>Sign up <em>now</em> to get started.
                     <p></p>
                     You <em>know</em> you want to.
-                </h1>
+                </h2>
             </div>
 
-            <div class="form-body">
+
+            <div class="entire-form">
                 <h2>Let's do this!</h2>
 
-                <form action="" method="post">
+                <form id ="sign-up-form" action="" method="post">
                     <ul>
                         <div class="form-top">
-                            <li>First Name</li>
-                            <li>Last Name</li>
-                            <li>Email</li>
-                            <li>Phone Number</li>
-                            <li>Password</li>
-                            <li>Confirm Password</li>
+
+                            <li>
+                                <label for ="first-name">First Name</label>
+                                <input id="first-name" name="first-name" type="text"/>
+                            </li>
+
+                            <li>
+                                <label for ="last-name">Last Name</label>
+                                <input id="last-name" name="last-name" type="text"/>
+                            </li>
+                            <li>
+                                <label for ="email">Email</label>
+                                <input id="email" name="email" type="email"/>
+                            </li>
+
+                            <li><label for ="phone-number">Phone Number</label>
+                                <input id="phone-number" name="phone-number" type="text" minlength="8"/></li>
+
+                            <li>
+                                <label for ="password">Password</label>
+                                <input id="password" name="password" type="password" required minlength="8" maxlength="30"/>
+                            </li>
+                            <li>
+                                <label for ="confirm-password">Confirm Password</label>
+                                <input id="confirm-password" name="confirm-password" type="password" required minlength="8" maxlength="30"/>
+                            </li>
+                        </form>
                         </div>
 
 
                         <div class="form-bottom">
-                            <li class="button"><button type="submit">Create Account</button></button></li>
+                            <li><button type="submit" form="sign-up-form">Create Account</button></li>
 
-                            <li>Already have an account? Log in.</li>
+                            <li>Already have an account? <strong>Log in</strong></li>
                         </div>
-
 
                     </ul>
 
-                </form>
-
             </div>
-
         </div>
     </div>
-    
+
 </body>
 </html>

@@ -1,0 +1,24 @@
+.container {
+    display:flex;
+}
+
+.left {
+    border: 1px solid black;
+    width: 40%;
+
+}
+
+.left image {
+    max-width: 100%;
+}
+
+.right {
+    border: 1px solid black;
+    width: 60%;
+}
+
+.form-body ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}

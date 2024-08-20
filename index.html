@@ -29,19 +29,17 @@
                 </h2>
             </div>
 
-
-            <div class="entire-form">
+            <div class="form-whole">
                 <h2>Let's do this!</h2>
 
-                <form id ="sign-up-form" action="" method="post">
-                    <ul>
-                        <div class="form-top">
-
+                <div class="form-body">
+                    <form id ="sign-up-form" action="" method="post">
+                        <ul>
                             <li>
                                 <label for ="first-name">First Name</label>
                                 <input id="first-name" name="first-name" type="text"/>
                             </li>
-
+    
                             <li>
                                 <label for ="last-name">Last Name</label>
                                 <input id="last-name" name="last-name" type="text"/>
@@ -50,10 +48,10 @@
                                 <label for ="email">Email</label>
                                 <input id="email" name="email" type="email"/>
                             </li>
-
+    
                             <li><label for ="phone-number">Phone Number</label>
                                 <input id="phone-number" name="phone-number" type="text" minlength="8"/></li>
-
+    
                             <li>
                                 <label for ="password">Password</label>
                                 <input id="password" name="password" type="password" required minlength="8" maxlength="30"/>
@@ -62,18 +60,16 @@
                                 <label for ="confirm-password">Confirm Password</label>
                                 <input id="confirm-password" name="confirm-password" type="password" required minlength="8" maxlength="30"/>
                             </li>
-                        </form>
-                        </div>
+                        </ul>
+                </div>
 
-
-                        <div class="form-bottom">
-                            <li><button type="submit" form="sign-up-form">Create Account</button></li>
-
-                            <li>Already have an account? <strong>Log in</strong></li>
-                        </div>
-
+                <div class="form-footer">
+                    <ul>
+                        <li><button type="submit" form="sign-up-form">Create Account</button></li>
+                        <li>Already have an account? <strong>Log in</strong></li>
                     </ul>
-
+                </div>
+                
             </div>
         </div>
     </div>

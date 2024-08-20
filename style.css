@@ -6,6 +6,7 @@
 body{
     background-color: rgb(247, 246, 246);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
 }
 
 .container {
@@ -25,7 +26,7 @@ body{
 
 .logo-overlay-background{
     background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
+    width: 99.9%;
     height: 20vh;
     border: 1px solid black;
     position: relative;
@@ -69,22 +70,16 @@ ul {
 
 
 /* left-side */
-.form-whole {
-    border: 3px solid red;
-}
 
-.form-whole > h2 {
-    padding-left: 50px;
-}
-
-.form-body {
-    padding-left: 50px;
+form {
+    background-color: white;
+    box-shadow: 0px 3px rgba(0,0,0,.2);
+    padding: 20px;
 }
 
 .form-footer {
-    border: 1px solid black;
-    padding-left: 50px;
     margin-top: 30px;
+    padding-left: 20px;
 }
 
 button {
@@ -98,44 +93,23 @@ button {
 
 strong {
     color: #596D48;
-} */
-
-
-
-/* .entire-form,
-form {
-    border: 2px solid red;
 }
 
-form {
-    background-color: white;
-}
-
-.form-top {
-    font-size: small;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.entire-form > h2,
-.entire-form > form {
-    padding-left: 50px;
-}
-
-.form-top {
-    border: 1px solid black;
-    margin-bottom: 50px;
-    text-transform: uppercase;
+.form-body ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
+    width: 60%;
 }
 
-
-.form-top li {
+.form-body li {
     display: flex;
     flex-direction: column;
     flex-basis: 40%;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 input:focus {
@@ -154,4 +128,3 @@ input[id="password"]:valid
 input[id="confirm-password"]:valid  {
     border-color: green;
   }
-
